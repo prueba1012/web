@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Fotos</title>
+  <link rel="stylesheet" href="./Css/styles_pro.css">
+</head>
+<body>
+
+  <div class="container">
+    <button type="button" ><a target="_blank" href="./index.html"> regresar</a></button>
+
+    <div class="header">
+      <div class="profile-section">
+        <!-- Imagen del usuario -->
+        <img src="./Images/img_pro/mareli.jpg" alt="Imagen del Usuario" class="user-image">
+        <h2> MARIANO ABENAMAR RUIZ PINTO.</h2> <!-- Separado del <p> -->
+        <p>ENCARGADO DEL AREA PRODUCTIVA.</p>
+      </div>
+
+      <div class="objectives-section">
+        <h3>Objetivos: El principal objetivo del área agrícola es desarrollar en los estudiantes habilidades, técnicas y conocimientos prácticos en agricultura. Integrando teoría y prácticas para fomentar su comprensión del sector agrícola, la conservación del medio ambiente y su preparación para contribuir al desarrollo rural.</h3>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="./Images/img_pro/MARI.jpg" alt="Imagen 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="./Images/img_pro/DANNA.jpg" alt="Imagen 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="./Images/img_pro/EVER.jpg" alt="Imagen 3">
+        </div>
+      </div>
+
+       <!-- Tabla de artículos y precios -->
+       <div class="table-section">
+        <table class="articles-table">
+            <thead>
+                <tr>
+                    <th>productos</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lechuga</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>rabano</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>cilantro</td>
+                    <td>$5.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+      <!-- Botones de navegación -->
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+      <!-- Botón de pausa/reanudar -->
+  
+    </div>
+  </div>
+
+  <script src="./Js/script_pro.js"></script>
+</body>
+</html>

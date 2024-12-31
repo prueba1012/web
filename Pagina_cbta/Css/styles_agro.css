@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8eb4d1;
+    color: #333;
+}
+
+header {
+    background-color: #167c41;
+    color: #110d09;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Sección del encargado y objetivo */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.image img {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.objective {
+    max-width: 500px;
+}
+
+.objective h2 {
+    color: #116333;
+    font-size: 1.8rem;
+}
+
+/* Galería automática */
+.gallery-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    gap: 4rem;
+    animation: slide 5.5s linear infinite;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+/* Sección de la tabla */
+.table-section {
+    flex: 1; /* Ocupa el espacio disponible */
+    width: 100%; /* Se asegura que la tabla ocupe el 100% de la sección */
+}
+
+/* Tabla de artículos */
+.articles-table {
+    width: 100%; /* Hace que la tabla ocupe el 100% del contenedor */
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: #fff; /* Texto blanco */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Encabezados de la tabla */
+.articles-table th {
+    background: linear-gradient(45deg, #eb54be, #c08021); /* Fondo con gradiente */
+    color: white; /* Texto blanco */
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Celdas de la tabla */
+.articles-table td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Líneas entre filas */
+}
+
+/* Filas alternadas */
+.articles-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1); /* Color más claro para filas pares */
+}
+
+/* Hover en filas */
+.articles-table tr:hover {
+    background: rgba(255, 255, 255, 0.2); /* Efecto de resaltado */
+    cursor: pointer;
+}
+
+/* Animación de la galería */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
